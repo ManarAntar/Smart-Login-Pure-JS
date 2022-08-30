@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sign Up</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+        crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container my-5">
+        <div class="login-box w-75 mx-auto p-5 text-center">
+            <h1 class="text-info">Smart Login System</h1>
+            <form action="#">
+                <input type="text" id="signupName" class="form-control my-3" oninput="namevalidation()" placeholder="Enter your Name" required>
+                <input type="email" id="signupEmail" class="form-control my-3" oninput="emailvalidation()" placeholder="Enter your email"
+                    required>
+                <input type="password" id="signupPassword" class="form-control my-3" oninput="passwordvalidation()" placeholder="Enter password"
+                    required>
+                <h6 id="successMsg" class="text-success p-2 d-none">Success</h6>
+                <h6 id="existMsg" class="text-danger p-2 d-none">email already exist</h6>
+                <h6 id="requiredMsg" class="text-danger p-2 d-none"> All inputs is required</h6>
+                <h6 id="validMsg" class="text-danger p-2 d-none"> All inputs must be valid</h6>
+
+                <button class="btn btn-outline-info w-100 my-3" id="signupBtn" onclick="signup();">Sign Up</button>
+                <p class="text-white">You have an account?
+                    <a class="text-white" href="index.html">Login</a>
+                </p>
+            </form>
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,51 @@
+*{
+    box-sizing: border-box;
+}
+body {
+    background: #24353f;
+}
+.login-box{
+    box-shadow: -5px 2px 54px -9px rgb(0 0 0);
+    background: #24353f;
+}
+.home-box{
+    box-shadow: -5px 2px 54px -9px rgb(0 0 0);
+    background: #24353f;
+}
+.navbar{
+    box-shadow:-5px 2px 54px -9px rgb(0 0 0);
+    background: #24353f;
+}
+.navbar .nav-link{
+    color:rgba(255, 255, 255, 0.5);
+    padding: 0.5rem 1rem;
+}
+.navbar .nav-link a :hover{
+    color:rgba(255, 255, 255);
+}
+input{
+    background-color: transparent !important;
+    color: #fff !important;
+}
+@media(max-width:768px){
+    .login-box{
+        width: 90% !important;
+        padding:53px 20px !important;
+    }
+    .login-box h1{
+        margin-bottom:40px !important;
+    }
+    .home-box{
+        width: 90% !important;
+        padding:30px 20px !important;
+    }
+    .navbar{
+        padding:15px 0 !important;
+    }
+    .navbar .container-fluid{
+        margin: 0% !important;
+    }
+    .navbar .nav-link{
+       padding: 8px 10px !important; 
+    }
+};
